@@ -41,13 +41,6 @@ A complete web-based system to manage student data, registrations, marks, and ro
 
 ---
 
-## 📷 Screenshots
-
-| Home Page | Project Section |
-|-----------|-----------------|
-| ![Home](screenshots/home.png) | ![Projects](screenshots/projects.png) |
-
----
 
 ## 💻 Run Locally
 
