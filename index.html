@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html class="scroll-smooth ">
+
+<head>
+    <title> Portfolio - Lalit </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden font-Outfit leading-8 ">
+
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] ">
+        <img src="images/header-bg-color.png" alt="" class="w-full">
+    </div>
+
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex item-center justify-between z-50">
+
+        <div class="text-xl font-bold">
+            Lalit<span class="text-purple-500">Patel.</span>
+        </div>
+
+
+
+        <ul class="hidden md:flex item-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm
+         bg-opacity-50 font-Ovo">
+            <li><a href="#top"> Home </a></li>
+            <li><a href="#about"> About me </a></li>
+            <li><a href="#services"> Services </a></li>
+            <li><a href="#work"> My Work </a></li>
+            <li><a href="#contact"> Contact me </a></li>
+        </ul>
+
+        <div class="flex items-center gap-4">
+
+            <!-- <button><img src="images/moon_icon.png" alt="" class="w-6"></button> -->
+
+            <a href="#contact" class="hidden lg:flex item-center gap-3 px-10 py-2.5 border border-gray-500
+         rounded-full ml-3 font-Ovo">Contact
+                 </a>
+
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="images/menu-black.png" alt="" class="w-6">
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- ------Mobile Menu-------- -->
+    <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed 
+         -right-64 button-0 top-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo">
+
+        <div class="absolute top-6 right-6" onclick="closeMenu()">
+            <img src="images/close-black.png" alt="" class="w-5 cursor-pointer">
+        </div>
+
+        <li><a href="#top" onclick="closeMenu()"> Home </a></li>
+        <li><a href="#about" onclick="closeMenu()"> About me </a></li>
+        <li><a href="#services" onclick="closeMenu()"> Services </a></li>
+        <li><a href="#work" onclick="closeMenu()"> My Work </a></li>
+        <li><a href="#contact" onclick="closeMenu()"> Contact me </a></li>
+    </ul>
+
+
+    <!-- ----- Header ----- -->
+
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col  items-center justify-center gap-4">
+
+        <img src="images/LalitLogo2.png" alt="" class="rounded-full w48 h-48"> <!-- Hi lalit patel image circle wali-->
+
+        <h3 class="flex item-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">Hi! I'm Lalit Patel
+            <img src="images/hand-icon.png" alt="" class="w-6">
+        </h3>
+
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"> I'm a Java Developer </h1>
+
+        <p class="max-w-2xl mx-auto font-Ovo">I am a Java FullStack enthusiast and have a strong foundation in building web
+            applications
+            using Java Servlets, JSP, and MySQL</p>
+
+        <div class="flex flex-col sm:flex-row item-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] 
+                text-white flex items-center gap-2"> Contact me
+                <img src="images/right-arrow-white.png" alt="" class="w-4"></a>
+
+            <a href="images/Lalit_Patel_J_Resume.pdf" download
+                class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white"> Resume
+                <img src="images/download-icon.png" alt="" class="w-4"></a>
+
+        </div>
+
+    </div>
+
+    <!-- ----------about me ----------- -->
+    <div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo"> Introduction </h4>
+        <h2 class="text-center text-5xl font-Ovo"> About me </h2>
+
+
+        <div class="flex w-full flex-col lg:flex-row item center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <!-- Badi images About me-->
+                <img src="images/Lalit3.png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+
+                
+
+            </div>
+
+            <div class="flex-1">
+                <p class="mb-10 max-w-2xl font-Ovo">
+                  A passionate Java Full-Stack Developer and B.Tech Computer Science student with a strong foundation in building efficient and scalable web applications using Java, Servlets, JSP, JDBC, and MySQL. I have developed impactful projects such
+as a Car Parking Reservation System and a Student Management System  with secure, role-based access and real-world use cases.
+
+<br> <br>Alongside backend development, I'm actively practicing Data Structures & Algorithms (DSA), Multithreading, and the Java Collections Framework to strengthen my core Java concepts.
+ 
+<br> <br>
+
+
+                    Currently, I'm expanding my skills by learning front-end technologies to grow into a
+                    Full-Stack Developer. I'm dedicated to continuously improving and exploring new technologies
+                    to create impactful solutions. </p>
+
+                <ul class="grid grid-cols-auto sm:grid-cols-auto gap-6 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                        hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-dark">
+
+                        <img src="images/code-icon.png" alt="" class="w-7 wt-3">
+                        <h3 class="my-4 font-seibold text-gray-700"> Languages</h3>
+                        <p class="text-gray-600 text-sm">C, CPP, Java, DSA, Multithreading, Collections, JSP, Servlet, JDBC, HTML, Basic CSS </p>
+
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                        hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-dark">
+
+                        <img src="images/edu-icon.png" alt="" class="w-7 wt-3">
+                        <h3 class="my-4 font-seibold text-gray-700"> Education</h3>
+                        <p class="text-gray-600 text-sm">B.tech in Computer Science - CGPA: 7.5</p>
+
+                    </li>
+
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer 
+                        hover:bg-lighthover hover:-translate-y-1 duration-500 hover:shadow-dark">
+
+                        <img src="images/project-icon.png" alt="" class="w-7 wt-3">
+                        <h3 class="my-4 font-seibold text-gray-700"> Project</h3>
+                        <p class="text-gray-600 text-sm">1. Car Parking Reservation System</p>
+                        <p class="text-gray-600 text-sm">2. Student Management System</p>
+
+                    </li>
+                    
+
+                </ul>
+                <h4 class="my-6 text-gray-700 font-bold font-Ovo"> Tools I Use</h4>
+                <ul class="flex items-center gap-3 sm:gap-5">
+                  <!-- Visual Studio Code -->
+                  <li class="relative flex items-center justify-center w-12 sm:w-14 aspect-square 
+                      border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="images/vscode.png" alt="VS Code" class="w-8 h-8 m-3">
+                    <span class="absolute bottom-[-1.5rem] text-sm text-gray-700 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                      VS Code
+                    </span>
+                  </li>
+                
+                  <!-- NetBeans -->
+                  <li class="relative flex items-center justify-center w-12 sm:w-14 aspect-square 
+                      border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="images/Netbeans3.png" alt="NetBeans" class="w-9 h-9 m-3 sm:w-7">
+                    <span class="absolute bottom-[-1.5rem] text-sm text-gray-700 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                      NetBeans
+                    </span>
+                  </li>
+                
+                  <!-- Notepad++ -->
+                  <li class="relative flex items-center justify-center w-12 sm:w-14 aspect-square 
+                      border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="images/Notepadpp2.png" alt="Notepad++" class="w-8 h-8 m-3 sm:w-7">
+                    <span class="absolute bottom-[-1.5rem] text-sm text-gray-700 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                      Notepad++
+                    </span>
+                  </li>
+                
+                  <!-- MySQL Workbench -->
+                  <li class="relative flex items-center justify-center w-12 sm:w-14 aspect-square 
+                      border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="images/mysqlworkbench3.png" alt="MySQL Workbench" class="w-13 h-13 m-3 sm:w-7">
+                    <span class="absolute bottom-[-2.5rem] text-sm text-gray-700 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                      MySQL Workbench
+                    </span>
+                  </li>
+                
+                  <!-- Git -->
+                  <li class="relative flex items-center justify-center w-12 sm:w-14 aspect-square 
+                      border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
+                    <img src="images/git.png" alt="Git" class="w-13 h-13 m-3 sm:w-7">
+                    <span class="absolute bottom-[-1.5rem] text-sm text-gray-700 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                      Git
+                    </span>
+                  </li>
+                </ul>
+                
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- --------Services----------- -->
+    <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo"> What i offer</h4>
+        <h2 class="text-center  text-5xl font-Ovo">My services</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+             A Java Developer and B.Tech Computer Science student, passionate about building efficient and
+            scalable web applications. With a strong foundation in Java, Servlets, JSP, and MySQL,
+            I have developed projects like a Car Parking Reservation System and Student Management System with secure role-based access.
+            <br><br>
+            Currently, expanding skills by learning front-end technologies to grow into a Full-Stack Developer.
+            Dedicated to continuously improving and exploring new technologies to create impactful solutions.
+
+        </p>
+        <div class="grid grid-cols-auto gap-6 my-10">
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-dark
+                    cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
+                <img src="images/java.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">Java development</h3>
+                <p class="text-sm text-gray-600 leading-5">
+                    Develop efficient and scalable back-end applications using Java, Servlets, and JSP .....</p>
+                <a href="" class="flex item-center gap-2 text-sm mt-5">Read More <img src="images/right-arrow.png"
+                        alt="" class="w-4"></a>
+
+            </div>
+
+            <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-dark
+                    cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500">
+                <img src="images/web-icon.png" alt="" class="w-10">
+                <h3 class="text-lg my-4 text-gray-700">Web development</h3>
+                <p class="text-sm text-gray-600 leading-5">
+                    Create responsive and user-friendly web interfaces using HTML, CSS, and MySQL .....</p>
+                <a href="" class="flex item-center gap-2 text-sm mt-5">Read More <img src="images/right-arrow.png"
+                        alt="" class="w-4"></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- --------work--------- -->
+    <div id="work" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo"> My portfolio</h4>
+        <h2 class="text-center  text-5xl font-Ovo">My latest work</h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            Welcome to my software development portfolio! Explore my projects that demonstrate
+            expertise in Java development, back-end systems, and responsive web applications,
+            showcasing my journey as a developer.
+        </p>
+
+        
+        <div class="grid grid-cols-1 gap-6 my-10">
+  <!-- Car Parking Reservation System Box -->
+  <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-dark
+              cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 
+              transition-all duration-300">
+    <img src="images/carparkinglogo.png" alt="Car Parking Reservation System Logo" class="w-8 mb-4">
+    <h2 class="text-2xl font-bold mb-4">Car Parking Reservation System</h2>
+    <p class="text-gray-400 mb-6">
+      A web app to book and manage parking slots, view booking history, and handle user profiles with admin control.
+    </p>
+    <p class="text-gray-400 mb-4">
+      <span class="font-semibold">Technologies:</span> JSP, Servlets, MySQL, HTML, CSS, JavaScript
+    </p>
+    <a href="https://github.com/LalitPatel06/Car_Parking_Reservation_System" 
+       class="text-yellow-500 font-semibold hover:underline hover:text-purple-500">
+      Learn More
+    </a>
+  </div>
+</div>
+        <div class="grid grid-cols-1 gap-6 my-10 ">
+            <!-- Student Management System Box -->
+            <div class=" border border-gray-400 rounded-lg px-8 py-12 hover:shadow-dark
+                    cursor-pointer hover:bg-lighthover hover:-translate-y-1 duration-500 
+                    transition-all duration-300">
+                    <img src="images/SMSlogo.png" alt="" class="w-8">
+                <h2 class="text-2xl font-bold mb-4">Student Management System</h2>
+                <p class="text-gray-400 mb-6">
+                    A comprehensive system to manage student data, including registration, marks management, and
+                    role-based access for Admin, Teachers, and Students.
+                </p>
+                <p class="text-gray-400 mb-4">
+                    <span class="font-semibold">Technologies:</span> Java, Servlets, JSP, JDBC, MySQL, HTML, CSS, JS
+                </p>
+                <a href="https://github.com/LalitPatel06/Student-Management-System" class="text-yellow-500 font-semibold hover:underline hover:text-purple-500">Learn More</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- --------Contact me--------- -->
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20">
+        <h4 class="text-center mb-2 text-lg font-Ovo"> Connected with me</h4>
+        <h2 class="text-center  text-5xl font-Ovo">Get in touch </h2>
+        <p class="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+            "I’d love to hear from you! Whether you have a question, 
+            want to discuss a project, feel free to reach out to me using the details below.
+        </p>
+<!-- GitHub -->
+<div class=" flex items-center justify-center ">
+    <div class="flex flex-wrap justify-center items-center gap-4 p-4">
+        <!-- GitHub -->
+        <a href="https://github.com/LalitPatel06" target="_blank">
+            <button type="button"
+                class="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none 
+                focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                <svg class="w-6 h-6 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                        clip-rule="evenodd" />
+                </svg>
+                GitHub
+            </button>
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/lalitpatel06/" target="_blank">
+            <button type="button"
+                class="text-white bg-[#FFA116] hover:bg-[#FFA116]/90 focus:ring-4 focus:outline-none 
+                focus:ring-[#FFA116]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                <img class="w-6 h-6 mr-2" src="images/Leetcode.jpg" alt="LeetCode Logo">
+                LeetCode
+            </button>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/lalitpatel6260" target="_blank">
+            <button type="button"
+                class="text-white bg-[#0077B5] hover:bg-[#0077B5]/90 focus:ring-4 focus:outline-none 
+                focus:ring-[#0077B5]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                <svg class="w-6 h-6 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M4.98 3.5a2.5 2.5 0 1 1-.001 5.001A2.5 2.5 0 0 1 4.98 3.5zM2 
+                        9h6v12H2zm7.7-5h4.2v2.1h.1c.6-1 2.1-2.1 4.3-2.1 4.6 0 5.5 3 5.5 
+                        6.9V21H18v-8.2c0-1.9-.1-4.3-3-4.3-3 0-3.5 2.2-3.5 4.4V21h-4.8z" />
+                </svg>
+                LinkedIn
+            </button>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:lalitpatel062002@gmail.com">
+            <button type="button"
+                class="text-white bg-[#EA4335] hover:bg-[#EA4335]/90 focus:ring-4 focus:outline-none 
+                focus:ring-[#EA4335]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                <svg class="w-6 h-6 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path d="M12 13.5l8-5.5H4zm-8 3.5v-8l8 5 8-5v8z" />
+                </svg>
+                Email
+            </button>
+        </a>
+    </div>
+</body>
+
+    </div>
+
+   <!-- ----- footer ----- -->
+    <div class="mt-20">
+        <div class="text-center">
+            <div class="text-xl font-bold ">
+                Lalit<span class="text-purple-500">Patel.</span>
+            </div>
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="images/mail_icon.png" alt="" class="w-6">
+                lalitpatel062002@gmail.com
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] my-12 py-6">
+            <p>@ 2025 Lalit Patel. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
